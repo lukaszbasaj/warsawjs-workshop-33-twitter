@@ -14,9 +14,7 @@ export default {
     props: {
         tweets: Array
     },
-    mounted() {
-        console.log(this.tweets);
-    }
+    mounted() {}
 };
 </script>
 

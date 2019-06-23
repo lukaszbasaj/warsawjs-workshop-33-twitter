@@ -28,11 +28,16 @@ export default {
     //             this.tweets = json;
     //         });
     // proper way style:
+
     async mounted() {
         const url = "http://localhost:3000/tweets";
-        const responce = await fetch(url);
-        const tweets = await responce.json();
-        this.tweets = tweets;
+        try {
+            const responce = await fetch(url);
+            const tweets = await responce.json();
+            this.tweets = tweets;
+        } catch (err) {
+            console.log(err);
+        }
     }
 };
 </script>
