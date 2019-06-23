@@ -1,0 +1,54 @@
+{
+    "tweets": [
+        {
+            "id": "8bf5faaa-338e-50f0-909b-73f47f946f84",
+            "created_time": "Sun Oct 21 2018 02:42:23 GMT+0200 (Central European Summer Time)",
+            "author": {
+                "id": "14508f51-44a8-5063-92b6-84a11d89e5d9",
+                "name": "Jedediah Armstrong",
+                "avatar_url": "https://s3.amazonaws.com/uifaces/faces/twitter/91bilal/128.jpg"
+            },
+            "body": "Viulduk juwulzud rekjo havnuhju uhgal ibugce usurukser ni dafa uvo nar vurwif lanutu ku lebo."
+        },
+        {
+            "id": "1c00aa07-c07a-585b-a921-bcc1b4f4c31c",
+            "created_time": "Tue Jun 04 2019 20:28:27 GMT+0200 (Central European Summer Time)",
+            "author": {
+                "id": "74dcc351-1261-5ec6-9787-db9b1bf72355",
+                "name": "Terrill Boyer",
+                "avatar_url": "https://s3.amazonaws.com/uifaces/faces/twitter/bistrianiosip/128.jpg"
+            },
+            "body": "Hagoh udolol nofose cefim evafagefu zojguh wic re onicizku le hebima ikdeh zugjug nuw ner."
+        },
+        {
+            "id": "b5e27aa1-b69a-5bff-ae71-941c3974fcd8",
+            "created_time": "Wed Feb 06 2019 05:00:46 GMT+0100 (Central European Standard Time)",
+            "author": {
+                "id": "349abf9d-3f97-5d52-8dfd-a53f54bae84c",
+                "name": "Allie Larkin",
+                "avatar_url": "https://s3.amazonaws.com/uifaces/faces/twitter/gearpixels/128.jpg"
+            },
+            "body": "Ih gaptudma wam sujebbab bi suc raupugo ruwe fakerid miwtos gali wejge velgivgom dipfeh hezvu."
+        },
+        {
+            "id": "91fb9bcc-1ddf-5263-88c9-66685cb8130f",
+            "created_time": "Sun Nov 11 2018 15:07:22 GMT+0100 (Central European Standard Time)",
+            "author": {
+                "id": "ed4d5228-1b73-5fd7-836d-62683a29e76f",
+                "name": "Raphaelle Stamm",
+                "avatar_url": "https://s3.amazonaws.com/uifaces/faces/twitter/michaelmartinho/128.jpg"
+            },
+            "body": "Hewuoc pi koc zaavu ikiossa zadkogtov lucecuha giwozobu kewwolhev fun utaes fokbo adhej kogsehjoj jumgu."
+        },
+        {
+            "id": "8695efde-4406-5adb-b167-75c0edba39c6",
+            "created_time": "Fri Nov 09 2018 01:46:34 GMT+0100 (Central European Standard Time)",
+            "author": {
+                "id": "ed7614e8-7f14-5565-a953-ae6490903a23",
+                "name": "Marielle Kemmer",
+                "avatar_url": "https://s3.amazonaws.com/uifaces/faces/twitter/mrjamesnoble/128.jpg"
+            },
+            "body": "Ho tourero me ejjac za tinegak dusjubo latuw ibe gava ibbi nuipe si misuplo zibololo fi re kivihon."
+        }
+    ]
+}
