@@ -2,6 +2,7 @@ import { assert } from 'chai';
 import App from '@/components/app';
 import { mount } from '@vue/test-utils';
 import TweetList from '@/components/tweet-list';
+import nock from 'nock';
 
 //@ts-check
 
@@ -25,7 +26,7 @@ suite('App', () => {
         });
         assert.ok(wrapper.contains(TweetList));
     });
-    it('Should have function to fetch tweets from external source via HTTP request', () => {
+    it('Should have function to fetch tweets from external source via HTTP request', async () => {
         const wrapper = mount(App, {
             stubs: {
                 Tweet: true,
@@ -37,5 +38,19 @@ suite('App', () => {
         console.log('wrapper.vw', wrapper.vm.fetchTweets)
         // console.log('wrapper.element', wrapper.element)
         // console.log('wrapper.options', wrapper.options)
+        // const ft = wrapper.vm.fetchTweets;
+        // ft();
+
+
+        // nock('http://localhost:3000')
+        //     .get('/tweets')
+        //     .reply(200, [
+        //         { id: 'id', body: 'body' }
+        //     ])
+
+        // const response = await ft();
+        // console.log(response);
+        // assert.lengthOf(response, 1);
+
     })
 });
