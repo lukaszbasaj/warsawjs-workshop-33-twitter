@@ -2,6 +2,7 @@ import { assert } from 'chai';
 import App from '@/components/app';
 import { mount } from '@vue/test-utils';
 import TweetList from '@/components/tweet-list';
+
 //@ts-check
 
 suite('App', () => {
@@ -24,4 +25,17 @@ suite('App', () => {
         });
         assert.ok(wrapper.contains(TweetList));
     });
+    it('Should have function to fetch tweets from external source via HTTP request', () => {
+        const wrapper = mount(App, {
+            stubs: {
+                Tweet: true,
+
+            }
+        });
+        assert.isFunction(wrapper.vm.fetchTweets)
+        // console.log('wrapper', wrapper)
+        console.log('wrapper.vw', wrapper.vm.fetchTweets)
+        // console.log('wrapper.element', wrapper.element)
+        // console.log('wrapper.options', wrapper.options)
+    })
 });

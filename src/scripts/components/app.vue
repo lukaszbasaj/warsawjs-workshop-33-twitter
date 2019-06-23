@@ -19,6 +19,17 @@ export default {
             tweets: []
         };
     },
+    methods: {
+        async fetchTweets() {
+            const url = "http://localhost:3000/tweets";
+            try {
+                const responce = await fetch(url);
+                return await responce.json();
+            } catch (err) {
+                console.log(err);
+            }
+        }
+    },
     // old fashion style:
     // mounted() {
     //     const url = "http://localhost:3000/tweets";
@@ -30,14 +41,7 @@ export default {
     // proper way style:
 
     async mounted() {
-        const url = "http://localhost:3000/tweets";
-        try {
-            const responce = await fetch(url);
-            const tweets = await responce.json();
-            this.tweets = tweets;
-        } catch (err) {
-            console.log(err);
-        }
+        this.tweets = await this.fetchTweets();
     }
 };
 </script>
