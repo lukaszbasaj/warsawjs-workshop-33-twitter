@@ -8,6 +8,7 @@
 
 <script>
 import TweetList from "@/components/tweet-list";
+import tweetVue from "./tweet.vue";
 export default {
     name: "App",
     components: {
@@ -15,14 +16,23 @@ export default {
     },
     data() {
         return {
-            tweets: [
-                { id: "1234", body: "o jejku" },
-                { id: "123456", body: "ojojo" },
-                { id: "324523", body: "ale działa" },
-                { id: "3434", body: "łał jak bardzo działa" },
-                { id: "15345", body: "fiu fiu" }
-            ]
+            tweets: []
         };
+    },
+    // old fashion style:
+    // mounted() {
+    //     const url = "http://localhost:3000/tweets";
+    //     fetch(url)
+    //         .then(response => response.json())
+    //         .then(json => {
+    //             this.tweets = json;
+    //         });
+    // proper way style:
+    async mounted() {
+        const url = "http://localhost:3000/tweets";
+        const responce = await fetch(url);
+        const tweets = await responce.json();
+        this.tweets = tweets;
     }
 };
 </script>

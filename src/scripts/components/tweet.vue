@@ -1,6 +1,7 @@
 <template>
     <div class="tweet">
-        <b-card title="Card title" sub-title="Card subtitle">
+        <b-card title>
+            {{ tweet.author.name}}
             <b-card-text>{{ tweet.body }}</b-card-text>
         </b-card>
     </div>
@@ -14,7 +15,7 @@ export default {
             id: String,
             body: String
         }
-    },
+    }
 };
 </script>
 
