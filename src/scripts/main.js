@@ -1,10 +1,10 @@
-import Tweet from '@/components/tweet';
-import Vue from 'vue';
 
+import Vue from 'vue';
+import App from '@/components/app';
 
 new Vue({
     el: '#app',
     components: {
-        Tweet
+        App
     }
 });
